@@ -64,4 +64,18 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 7  
+**MongoDB Setup + Product Model**
+
+- Installed and setup MongoDB connection  
+- Connected the backend to MongoDB using Mongoose  
+- Created the Product Schema (Model)  
+- Wrote the controller function for `addProduct`  
+- Added POST route to handle adding new products  
+- Applied middleware to parse all incoming requests as JSON  
+- Used the Mongoose `.create()` method to insert product data into the database  
+- Tested the API using Postman and verified product saved successfully  
+
+---
+
 (Continue updating daily…)
