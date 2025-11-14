@@ -104,4 +104,17 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 9
+
+**Error Handling Setup**
+
+- Created a custom `HandleError` class that extends the default JavaScript `Error`
+- Added a global error-handling middleware to manage all API errors
+- Replaced old “Product Not Found” messages with the new custom error handler
+- Implemented `unhandledRejection` handling in `server.js`
+- Implemented `uncaughtException` handling in `server.js` to prevent server crashes
+- Tested all routes to ensure errors are thrown and formatted correctly
+
+---
+
 (Continue updating daily…)
