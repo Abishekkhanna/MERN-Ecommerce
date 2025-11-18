@@ -117,4 +117,17 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 10
+
+**API Helper for Search Functionality**
+
+- Created an `APIhelper` class to manage advanced query features
+- Implemented the `Search()` method to enable keyword-based product search
+- Used MongoDB `$regex` with `$options: "i"` for case-insensitive searching
+- Integrated the helper into product listing API
+- Verified search functionality in Postman using different keywords
+- Added `Filter()` method placeholder for future filtering options
+
+---
+
 (Continue updating daily…)
