@@ -1,5 +1,6 @@
 import Product from "../models/productModel.js";
 import HandleError from "../helper/handleError.js";
+import APIhelper from "../helper/APIhelper.js";
 
 // Add Product
 export const addProduct = async (req, res) => {
@@ -12,7 +13,9 @@ export const addProduct = async (req, res) => {
 
 // Get all product
 export const getAllProducts = async (req, res) => {
-  const product = await Product.find();
+  // const product = await Product.find();
+  const apihelper = new APIhelper(Product.find(), req.query).Search();
+  const product = await apihelper.query;
   res.status(200).json({
     success: true,
     product,
