@@ -130,4 +130,19 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 11
+
+**Filter & Pagination Implementation**
+
+- Updated the `getAllProducts` controller to support advanced search, filtering, and pagination
+- Added total product count and total pages calculation
+- Added page validation (throws error if the requested page doesn’t exist)
+- Implemented `Filter()` method in `APIhelper` to remove unwanted fields (`keyword`, `page`, `limit`)
+- Enabled filtering using remaining query parameters
+- Added `Pagination()` method to limit results and skip based on page number
+- Tested all functionalities: search, filter, pagination, and page error handling
+- Verified full output in Postman including product list, total pages, and current page
+
+---
+
 (Continue updating daily…)
