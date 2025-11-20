@@ -145,4 +145,19 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 12
+
+**User Registration Module**
+
+- Created `User` model with fields: name, email, password, avatar, role, and reset password fields
+- Added validation using `validator` package for proper email format
+- Secured password using `bcrypt` with Mongoose `pre("save")` hashing
+- Built `registerUser` controller to create new users with name, email, password, and avatar
+- Implemented POST route `/register` for user signup
+- Added JSON middleware in `app.js` to handle incoming request data
+- Connected user routes to main route handler (`/api/v1/`)
+- Successfully tested user registration in Postman and confirmed new user saved in database
+
+---
+
 (Continue updating daily…)
