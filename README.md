@@ -1,6 +1,6 @@
 # 🛒 MERN E-Commerce Project  
 Learning MERN Stack by building a complete E-Commerce web application.  
-Tutorial followed from **Tutor Joe’s YouTube Channel**.
+Tutorial followed from **Tutor Joe’s Stanley YouTube Channel**.
 
 ---
 
