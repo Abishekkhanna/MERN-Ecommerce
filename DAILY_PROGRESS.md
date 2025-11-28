@@ -160,4 +160,10 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 13
+
+**User Authentication**
+
+---
+
 (Continue updating daily…)
