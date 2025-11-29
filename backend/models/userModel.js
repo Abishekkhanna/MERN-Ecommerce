@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 
 const userSchema = new mongoose.Schema(
   {
@@ -41,6 +42,7 @@ const userSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
+
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
     return next();
@@ -48,4 +50,11 @@ userSchema.pre("save", async function (next) {
   this.password = await bcrypt.hash(this.password, 10);
   next();
 });
+
+userSchema.methods.getJWTToken = function () {
+  return jwt.sign({}, process.env.JWT_TOKEN, {
+    expiresIn: process.env.JWT_TOKEN_EXPIRY,
+  });
+};
+
 export default mongoose.model("user", userSchema);
