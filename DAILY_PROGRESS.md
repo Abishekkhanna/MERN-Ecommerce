@@ -162,7 +162,16 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ## ✅ Day 13
 
-**User Authentication**
+**JWT Token + User Validation + Duplicate Email Handling**
+
+- Added `getJWTToken()` method inside `userSchema` to generate JWT tokens
+- Implemented JWT signing using secret key and expiry from `.env` file
+- Returned JWT token along with user details after successful registration
+- Added validation checks for empty fields: name, email, and password
+- Integrated custom error handler for missing required fields
+- Implemented duplicate email error handling using MongoDB error code `11000`
+- Returned a clear message when email is already taken
+- Tested full registration flow with valid, empty, and duplicate inputs in Postman
 
 ---
 
