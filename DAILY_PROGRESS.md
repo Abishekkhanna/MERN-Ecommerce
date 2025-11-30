@@ -175,4 +175,23 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 14
+
+**User Login + Token Cookie Setup**
+
+- Updated `registerUser` to use `sendToken()` for sending JWT token after signup
+- Created `loginUser` controller to authenticate users using email and password
+- Added validation to check if email or password fields are empty
+- Fetched user data using `.findOne()` and included password using `.select("+password")`
+- Added `verifyPassword()` method in user schema using `bcrypt.compare()`
+- Returned an error if the password or email is incorrect
+- Implemented `sendToken()` function to:
+  - Generate JWT token
+  - Store token inside an HTTP-only cookie
+  - Set cookie expiration using `.env` variables
+- Added POST route `/login` for user login
+- Successfully tested login with valid and invalid credentials in Postman
+
+---
+
 (Continue updating daily…)
