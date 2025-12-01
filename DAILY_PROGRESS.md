@@ -194,4 +194,20 @@ This file tracks my daily MERN learning progress while building the E-Commerce p
 
 ---
 
+## ✅ Day 15  
+**User Authentication Middleware (Protected Routes)**
+
+- Added `cookieParser()` middleware in `app.js` to read cookies from incoming requests  
+- Created `verifyUser` middleware to protect API routes  
+- Checked for JWT token inside `req.cookies`  
+- Returned an error if the token is missing (user not logged in)  
+- Verified JWT token using `jwt.verify()` with secret stored in `.env`  
+- Fetched user data using `User.findById()` and attached it to `req.user`  
+- Applied `verifyUser` middleware to protect the `getAllProducts` route  
+- Successfully tested access:
+  - Without login → blocked with error  
+  - With login → allowed access  
+
+---
+
 (Continue updating daily…)
