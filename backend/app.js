@@ -2,11 +2,13 @@ import express from "express";
 import productRoute from "./routes/productRoute.js";
 import errorHandler from "./middleware/error.js";
 import userRoute from "./routes/userRoute.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 
 //middleware for getting response as json-format
 app.use(express.json());
+app.use(cookieParser());
 
 //routes
 app.use("/api/v1/", productRoute);

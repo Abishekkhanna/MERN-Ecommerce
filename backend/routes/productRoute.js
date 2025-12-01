@@ -6,6 +6,7 @@ import {
   updateProduct,
   deleteProduct,
 } from "../controller/productController.js";
+import { verifyUser } from "../helper/userAuth.js";
 const router = express.Router();
 
 router
@@ -13,6 +14,6 @@ router
   .get(getSingleProducts)
   .put(updateProduct)
   .delete(deleteProduct);
-router.route("/products").get(getAllProducts).post(addProduct);
+router.route("/products").get(verifyUser, getAllProducts).post(addProduct);
 
 export default router;
